@@ -2,3 +2,7 @@
 
 - Create your first native phone/device application using React Native.
 - QR Code to scan 
+
+![QR](QR.jpg)
+
+- to run the code use expo start .
