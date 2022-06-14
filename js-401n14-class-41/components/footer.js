@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Item(props) {
+export default function footer() {
   return (
-    <View style={styles.listItem}>
-      <Text onPress={() => props.onDelete(props.title)}>
-        {props.title}
+    <View style={styles.footer}>
+      <Text >
+      &Copy; Manal Kh Albahar
       </Text>
     </View>
   )
@@ -13,8 +13,8 @@ export default function Item(props) {
 
 
 const styles = StyleSheet.create({
-  listItem: {
-    backgroundColor: '#816797',
+  footer: {
+    backgroundColor: '#DFF6FF',
     borderColor: 'blue',
     margin: 20,
     borderWidth: 2,

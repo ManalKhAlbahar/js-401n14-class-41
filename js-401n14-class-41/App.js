@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Button, StyleSheet, Text, View, TextInput, FlatList } from 'react-native';
 import Item from './components/Item';
+import Header from './components/header';
+import Footer from './components/footer';
+
 
 export default function App() {
   const [newItem, setNewItem] = useState('');
@@ -21,8 +24,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.screen}>
+    <View style={styles.screen}> 
+      <Header />
       <View style={styles.inputContainer}>
+     
         <TextInput
           style={styles.input}
           placeholder='Add item'
@@ -38,6 +43,7 @@ export default function App() {
           )
         }
       />
+ <View> <Footer /></View>   
     </View>
   );
 }
@@ -48,12 +54,13 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flexDirection: 'row',
+    margin: 20,
     justifyContent: 'space-between',
     alignItems: 'center'
   },
   input: {
     borderWidth: 1,
     borderColor: 'blue',
-    width: '70%'
+    width: '90%'
   }
 });
